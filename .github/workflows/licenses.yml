@@ -27,6 +27,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Check Licenses
-        uses: ONLYOFFICE/check-licenses@v1.0.0
+        uses: ONLYOFFICE/check-licenses@v1
         with:
           project_license: ${{ steps.license.outputs.license }}
